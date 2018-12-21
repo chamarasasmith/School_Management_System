@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TeachersLeave" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbdf6f98-27fe-4fcd-8bf7-9301a8f98d55">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#D9D5C3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFFBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="7a26147c-5b45-4790-836b-3618ab236ae0">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     teachers.`nic`,
+     teachers.`ser_name`,
+     teachers.`last_name`,
+     teachers.`nic`,
+     teachers.`ser_name`,
+     teachers.`last_name`
+FROM
+     `teachers` teachers]]>
+		</queryString>
+		<field name="nic" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="ser_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="last_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="nic">
+			<groupExpression><![CDATA[$F{nic}]]></groupExpression>
+		</group>
+		<group name="ser_name">
+			<groupExpression><![CDATA[$F{ser_name}]]></groupExpression>
+		</group>
+		<group name="last_name">
+			<groupExpression><![CDATA[$F{last_name}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="classId" class="java.lang.String"/>
+	<parameter name="className" class="java.lang.String"/>
+	<parameter name="teacherName" class="java.lang.String"/>
+	<parameter name="img" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from students where Classes_idClasses=$P{classId}]]>
+	</queryString>
+	<field name="index_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ser_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="middle_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Pass_out_date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="admission_date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="father_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_occupation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_tel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mother_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_occupation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_tel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="street" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="city" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="special_skills" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="other_details" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Classes_idClasses" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Travel_mode_idTravel_mode" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="20">
+				<reportElement mode="Opaque" x="-1" y="1" width="554" height="78" backcolor="#FFFFFF" uuid="885f5ce5-9d97-4ebe-86f2-85fdf6a4c884"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="120" y="47" width="109" height="32" uuid="9e9d2b7f-1cd7-43c3-9232-76ce891fd07f"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BEMMULLA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="13" width="382" height="34" uuid="37019eff-509a-4996-9389-f99a01eee781"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pitiyegedara Primary School]]></text>
+			</staticText>
+			<image>
+				<reportElement x="458" y="0" width="91" height="79" uuid="886c7db2-c920-4f17-8ca6-81215bcc2f99"/>
+				<imageExpression><![CDATA[$P{img}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="167" y="8" width="56" height="27" uuid="29b7beda-7897-4df4-8462-de78335bad5c"/>
+				<textElement>
+					<font fontName="Palatino Linotype" size="20" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Class                 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="8" width="69" height="27" uuid="0b90fa95-7db7-46f5-90c5-b0865248fbe7"/>
+				<textElement>
+					<font fontName="Palatino Linotype" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Details]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="223" y="8" width="40" height="27" forecolor="#3333FF" uuid="14cec014-c9e2-4eff-83c6-581006564668"/>
+				<textElement>
+					<font fontName="Palatino Linotype" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{className}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="432" y="0" width="124" height="20" uuid="90e3f350-d3ee-43c8-835b-9e6f338e5968"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{teacherName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="343" y="0" width="89" height="20" uuid="9bfb5184-113c-453f-bfe1-137d0d38d9db"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class  Incharge :-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="0" y="41" width="100" height="20" backcolor="#CCCCFF" uuid="2903072a-61ce-4252-b055-7e5247c33991"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Index No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="101" y="41" width="100" height="20" backcolor="#CCCCFF" uuid="b335b8d8-2ed3-4647-9374-127e2865bdaa"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="201" y="41" width="100" height="20" backcolor="#CCCCFF" uuid="103a1781-1a2d-4bb8-8d41-caabb752d70c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="301" y="41" width="100" height="20" backcolor="#CCCCFF" uuid="054b59c0-0e38-4493-a2be-b2abc0bc0979"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gardian's Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="401" y="41" width="64" height="20" backcolor="#CCCCFF" uuid="f75ddd75-6d82-45f0-a698-c58cd7cace2c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="465" y="41" width="90" height="20" backcolor="#CCCCFF" uuid="162fd717-ada5-48e1-a9e0-571f33ba297f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="60" width="554" height="1" uuid="cea73bed-f29c-46e5-9978-b9af3fa8c6ce"/>
+			</line>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="20" y="0" width="100" height="20" uuid="c4354d05-0aa8-49c5-ac6d-6e3cb6ac33ed"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="0" width="100" height="20" uuid="ac64a819-76f8-4b9b-99ad-e3efabe11189"/>
+				<textFieldExpression><![CDATA[$F{index_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="0" width="100" height="20" uuid="d8b8d32b-9068-4cfb-b819-f96a1c8407ea"/>
+				<textFieldExpression><![CDATA[$F{Ser_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="0" width="100" height="20" uuid="af5ab69f-7271-4036-97e5-35a9aeb5e449"/>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="301" y="0" width="100" height="20" uuid="b59803a8-e098-4804-b573-8cf95fade90d"/>
+				<textFieldExpression><![CDATA[$F{father_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="64" height="20" uuid="a2165bab-f194-4013-bb90-82681a7d4648"/>
+				<textFieldExpression><![CDATA[$F{f_tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="91" height="20" uuid="45c01530-2bd6-4174-ba39-ac2ef1979519"/>
+				<textFieldExpression><![CDATA[$F{m_tel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<break>
+				<reportElement x="0" y="14" width="100" height="1" uuid="78837883-743c-499c-90b0-d37581929de4"/>
+			</break>
+		</band>
+	</summary>
+</jasperReport>

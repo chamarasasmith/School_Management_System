@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1000.0" stylesheets="@CSTheme1.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school_management_system.TeachersController">
+   <children>
+      <SplitPane fx:id="sp0" dividerPositions="0.15" layoutX="98.0" layoutY="65.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="19.0" prefWidth="598.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <VBox layoutX="304.0" layoutY="-86.0" prefHeight="33.0" prefWidth="998.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/3.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="904.0">
+                                 <children>
+                                    <Label prefHeight="58.0" prefWidth="930.0" styleClass="customlabel" text="WP/GM/ Pitiyegedara Primary School - Management System" />
+                                 </children>
+                              </HBox>
+                              <ImageView fx:id="home" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#setHome" onMouseEntered="#homeen" onMouseExited="#homeex" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/main1/home.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#change" onMouseEntered="#entering" onMouseExited="#exiting" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label styleClass="customlabel3" text="Add New Teachers Informations" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane fx:id="sp1" dividerPositions="0.29" layoutX="60.0" layoutY="95.0" prefHeight="349.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <GridPane layoutX="44.0" layoutY="84.0" prefHeight="347.0" prefWidth="288.0" styleClass="grid-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="subhedderColor">
+                                       <children>
+                                          <Label styleClass="customlabel2" text="Personal Details">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label text="NIC">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="nic" alignment="CENTER" promptText="National Identy Card Number" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label text="Name">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="fname" alignment="CENTER" promptText="First Name" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="mname" alignment="CENTER" promptText="Middle Name" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="lname" alignment="CENTER" promptText="Last Name" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                                       <children>
+                                          <Label text="Date of Birth">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <DatePicker fx:id="dob" editable="false" maxWidth="1.7976931348623157E308" promptText="Select Birthday" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                                       <children>
+                                          <Label text="Gender">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" GridPane.rowIndex="10">
+                                       <children>
+                                          <RadioButton fx:id="male" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" text="Male">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="a" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="female" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Female" toggleGroup="$a" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="11">
+                                       <children>
+                                          <Label text="Address">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="street" alignment="CENTER" promptText="Street" GridPane.rowIndex="12">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="city" alignment="CENTER" promptText="City" GridPane.rowIndex="13">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="14">
+                                       <children>
+                                          <Label text="Telephone">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="pTel" alignment="CENTER" promptText="Personal Mobile No" GridPane.rowIndex="15">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane fx:id="sp2" dividerPositions="0.5" layoutX="-17.0" layoutY="43.0" prefHeight="371.0" prefWidth="404.0" snapToPixel="false" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <GridPane layoutX="40.0" layoutY="69.0" prefHeight="369.0" prefWidth="369.0" styleClass="grid-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="subhedderColor">
+                                                   <children>
+                                                      <HBox>
+                                                         <children>
+                                                            <Label styleClass="customlabel2" text="Proffesional Details">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="First Appoinment Date">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <DatePicker fx:id="fstappointDate" maxWidth="1.7976931348623157E308" promptText="ex :-  20/03/1998" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </DatePicker>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label text="Appoinment Date of this School">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <DatePicker fx:id="sclappointDate" maxWidth="1.7976931348623157E308" promptText="ex :-  20/03/2007" GridPane.rowIndex="4">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </DatePicker>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label text="Increment Date">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <DatePicker fx:id="inceDate" maxWidth="1.7976931348623157E308" promptText="ex :-  20/03/1998" GridPane.rowIndex="6">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </DatePicker>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <Label text="Educational Qulifications">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <TextArea fx:id="eduQulifi" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" promptText="ex:- O/L , A/L" GridPane.rowIndex="8">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </TextArea>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                                                   <children>
+                                                      <Label text="Proffesional Qulifications">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <TextArea fx:id="profQulifi" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" promptText="ex:- Teaching Deploma" GridPane.rowIndex="10">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </TextArea>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="11">
+                                                   <children>
+                                                      <Label text="Teacher's Service Grade">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <ComboBox fx:id="serGrade" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="Select service Grade" GridPane.rowIndex="12">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </ComboBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="13">
+                                                   <children>
+                                                      <Label text="Class Incharge">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <ComboBox fx:id="preClass" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="select teacher's Present class" GridPane.rowIndex="14">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </ComboBox>
+                                                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="15">
+                                                   <children>
+                                                      <Label text="Teacher's Category">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <ComboBox fx:id="tcat" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="16">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </ComboBox>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <GridPane prefHeight="182.0" prefWidth="300.0" styleClass="grid-pane">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="subhedderColor">
+                                             <children>
+                                                <Label styleClass="customlabel2" text="Travel &amp; Spouce Details">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label text="Name">
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <TextField fx:id="sFName" alignment="CENTER" promptText="First Name" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="sMname" alignment="CENTER" promptText="Middle Name" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="sLName" alignment="CENTER" promptText="Last Name" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                                             <children>
+                                                <Label text="Ocupation">
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <TextField fx:id="sJob" alignment="CENTER" promptText="Job Title of Spouce" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                                             <children>
+                                                <Label text="Telephone">
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <TextField fx:id="stel" alignment="CENTER" promptText="Contact No" GridPane.rowIndex="8">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                                             <children>
+                                                <Label text="Other Details">
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <TextArea fx:id="otherDetails" prefHeight="7.0" prefWidth="304.0" promptText="Enter Teacher's status" GridPane.rowIndex="10">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </TextArea>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="11">
+                                             <children>
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label text="Travel Mode">
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label fx:id="NotFillerror" styleClass="smallLables" text="Required Field should be fill" textFill="#f56f6f" visible="false">
+                                                   <font>
+                                                      <Font size="4.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                   <padding>
+                                                      <Insets left="80.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <ComboBox fx:id="tmode1" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="12">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </GridPane.margin>
+                                          </ComboBox>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#datasave" text="Save" GridPane.rowIndex="16">
+                                             <GridPane.margin>
+                                                <Insets left="60.0" right="60.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

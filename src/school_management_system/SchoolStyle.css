@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 2, 2016, 4:19:12 PM
+    Author     : Gihan Munasinghe
+*/
+
+
+.label{
+    
+     -fx-font-size:15px; 
+     -fx-text-fill: #0033cc;
+     /*-fx-font-weight:bold;*/
+    
+}
+.smallLables{
+    -fx-font-size:12px; 
+    
+}
+.myhedder{
+    
+     -fx-font-size:30px; 
+     -fx-font-weight:bold;
+    
+}
+.mysubhedder{
+    
+    -fx-font-size:20px;  
+    -fx-font-weight:bold;
+ 
+    
+}
+.combo-box{
+
+
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-border-width: 2;
+    -fx-text-fill: black;
+    -fx-font-weight:bold;
+
+}
+.subhedderColor{
+    
+    -fx-background-color: #ffff00;
+    
+}
+.subhedderColor1{
+    
+    -fx-background-color: #ccff66;
+    
+}
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+   -fx-background-color:transparent;
+   
+  
+}
+
+.grid-pane{
+    
+    -fx-border-color: #990033;
+    -fx-border-width:2px;
+    -fx-border-radius:5px;
+    
+    
+    
+}
+
+.Mycombo{
+    
+    background-color: transparent;
+    
+}
+.mainheder{
+    -fx-font-size:20px;
+     -fx-font-weight:bold;
+-fx-font-family: "a";
+}
+
+.button{
+    
+    
+/*    -fx-text-fill: rgb(89,74,289);
+    -fx-text-fill: rgb(89,74,289);
+    -fx-border-width: 2;
+    -fx-border-color:#ff9747;
+    -fx-border-radius:30;*/
+    
+    
+-fx-background-color:#0066cc;
+-fx-fill: #ffffff;
+    -fx-text-fill:#ffffff;
+   -fx-font-size:15px;
+   -fx-font-weight:bold;
+}
+.button:hover{
+    
+    -fx-background-color:#ff0066;  
+}
+/*.button:focused{
+    
+    -fx-background-color:#ff0066;  
+}*/
+.indexStyle{
+    
+    -fx-font-size:14px;
+    -fx-text-fill:#990099;
+    -fx-font-weight:bold;
+}

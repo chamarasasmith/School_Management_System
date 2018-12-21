@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TeachersLeave" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbdf6f98-27fe-4fcd-8bf7-9301a8f98d55">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+		</box>
+		<conditionalStyle>
+			<style/>
+		</conditionalStyle>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#D9D5C3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFFBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="7a26147c-5b45-4790-836b-3618ab236ae0">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     teachers.`nic`,
+     teachers.`ser_name`,
+     teachers.`last_name`,
+     teachers.`nic`,
+     teachers.`ser_name`,
+     teachers.`last_name`
+FROM
+     `teachers` teachers]]>
+		</queryString>
+		<field name="nic" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="ser_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="last_name" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="nic">
+			<groupExpression><![CDATA[$F{nic}]]></groupExpression>
+		</group>
+		<group name="ser_name">
+			<groupExpression><![CDATA[$F{ser_name}]]></groupExpression>
+		</group>
+		<group name="last_name">
+			<groupExpression><![CDATA[$F{last_name}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="img" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT DISTINCT Nic  Nic,Ser_name,last_name,cat_name,first_appoint_date FROM teachers NATURAL JOIN teachers_cat WHERE teachers.teachers_cat_idteachers_cat=teachers_cat.idteachers_cat]]>
+	</queryString>
+	<field name="Nic" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ser_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cat_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="first_appoint_date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="20">
+				<reportElement mode="Opaque" x="1" y="1" width="554" height="78" backcolor="#FFFFFF" uuid="f1ac52ba-3fd1-4a57-8bc8-f23e684d5436"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#000000"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="27" y="14" width="428" height="33" uuid="79e38c25-d34e-4e9d-93e6-ab145aaa62b8"/>
+				<textElement>
+					<font fontName="Arial" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PITIYEGEDARA PRIMARY SCHOOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="47" width="109" height="32" uuid="9e9d2b7f-1cd7-43c3-9232-76ce891fd07f"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BEMMULLA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="184" y="8" width="210" height="27" uuid="29b7beda-7897-4df4-8462-de78335bad5c"/>
+				<textElement>
+					<font fontName="Palatino Linotype" size="20" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Teachers Categories]]></text>
+			</staticText>
+			<image>
+				<reportElement x="464" y="-80" width="91" height="79" uuid="e7c6ef55-94c8-46a6-a488-07307cfba677"/>
+				<imageExpression><![CDATA[$P{img}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement style="table_TH" x="7" y="41" width="100" height="20" backcolor="#FFFF66" uuid="89c217b6-9c6d-44bc-80f8-6c145912be20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="107" y="41" width="100" height="20" backcolor="#FFFF66" uuid="e5e8e9f8-27ed-4ea4-9827-293734781a33"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="207" y="41" width="100" height="20" backcolor="#FFFF66" uuid="0d69ba35-c66f-4cfe-9818-6df7981c30c6"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="307" y="41" width="100" height="20" backcolor="#FFFF66" uuid="e054ba12-f7a9-4aa6-9b7c-7d24544d7b1c"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" x="407" y="41" width="135" height="20" backcolor="#FFFF66" uuid="cd04a99f-2643-4dfe-b9ef-4f0fda527538"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1st Appoint_date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="60" width="535" height="1" uuid="bc3205d9-29d5-4853-bd5a-e3eff2f2d032"/>
+			</line>
+			<frame>
+				<reportElement x="7" y="41" width="533" height="20" backcolor="#66FF66" uuid="6aea92dc-50af-4568-a50c-c7a62d5dc37f"/>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="7" y="0" width="100" height="20" uuid="b78d1f5b-df8e-4443-8fc5-557fe1b7c1a4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="100" height="20" uuid="b899b5e3-eaad-4170-923b-a79185ec8653"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="100" height="20" uuid="410eec86-ad63-4096-9db0-8bf5b496bd7a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cat_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="0" width="148" height="20" uuid="a8b0fb03-ef91-47e0-bb5e-8b27d9687724"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{first_appoint_date}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="0" width="100" height="20" uuid="e06f7e23-3708-4323-aab4-2b09b1809225"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Ser_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="22" width="100" height="20" uuid="c4354d05-0aa8-49c5-ac6d-6e3cb6ac33ed"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="22" width="58" height="20" uuid="be958764-365e-499f-bfa3-c20c49ca48c6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="60" y="22" width="40" height="20" uuid="b39569dc-6903-4363-9c13-9165070cd2ad"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="262" y="31" width="41" height="10" uuid="89e95467-097a-4b78-b584-a89170b550ba"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Zenon Pages]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

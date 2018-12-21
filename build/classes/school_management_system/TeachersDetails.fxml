@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@CSTheme1.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="108.0" layoutY="-39.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="904.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/3.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="58.0" prefWidth="930.0" styleClass="customlabel3" text="WP/GM/ Pitiyegedara Primary School - Management System " />
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="home" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#setHome" onMouseEntered="#homeen" onMouseExited="#homeex" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Back.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#change" onMouseEntered="#entering" onMouseExited="#exiting" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <GridPane prefHeight="350.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Increment Date" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Education Qulification" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="Proffesional Qualification" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="Spouce's Name" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="Street" GridPane.columnIndex="4" />
+                  <Label text="City" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Label text="Telephone" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Label text="Other Details" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Label text="Class Name" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Label text="NIC" />
+                  <Label text="First Name" GridPane.rowIndex="2" />
+                  <Label text="Last Name" GridPane.rowIndex="3" />
+                  <Label text="Date Of Birth" GridPane.rowIndex="4" />
+                  <Label text="Gender" GridPane.rowIndex="5" />
+                  <Label text="First Appoint Date" GridPane.rowIndex="6" />
+                  <Label text="School Appoint Date" GridPane.columnIndex="2" />
+                  <Label text="Spouce's Occupation" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="Spouce's Telephone" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label text="Travel Mode" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Label text="Service Grade" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Label fx:id="nic" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="sname" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="fname" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lname" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="dob" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="gen" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="fappoint" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="sapp" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="idate" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="edu" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="pro" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="spname" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="spocu" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="sptel" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="street" styleClass="customlabelBlack" text="................................" wrapText="true" GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="city" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="tel" styleClass="customlabelBlack" text="................................" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="odet" styleClass="customlabelBlack" text="................................" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="clz" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="tmode" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="grade" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Surname" GridPane.rowIndex="1" />
+                  <Label text="Status" GridPane.rowIndex="7" />
+                  <Label fx:id="st" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Category" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label fx:id="cat" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Leave" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Label fx:id="leave1" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#backSearch" text="Update" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <Label text="Grade" GridPane.rowIndex="8" />
+                  <Label fx:id="grade1" styleClass="customlabelBlack" text="................................" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school_management_system.Main1Controller">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="76.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane fx:id="stack" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="logo" fitHeight="700.0" fitWidth="700.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/0.0.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="students1" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#stuen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/0.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="settings1" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#seten" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/0.2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="teachers1" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#teaen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/0.3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="reports1" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#repen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/0.4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="student" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#stuok" onMouseExited="#stuex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="settings" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#stok" onMouseExited="#stex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="teacher" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#teaok" onMouseExited="#teaex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="reports" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#repok" onMouseExited="#repex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b11" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#seaen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/1.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b12" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#regiStudents" onMouseEntered="#regen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/1.2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b21" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#bacen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/2.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b22" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#useren" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/2.2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b31" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#reg1en" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/3.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b32" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#sea1en" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/3.2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b41" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#exen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/4.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b42" fitHeight="700.0" fitWidth="700.0" onMouseEntered="#eveen" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/4.2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b111" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#seaok" onMouseExited="#seaex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/1.1.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b121" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#reqok" onMouseExited="#reqex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/1.2.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b211" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#bacok" onMouseExited="#bacex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/2.1.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b221" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#userok" onMouseExited="#userex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/2.2.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b311" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#req1ok" onMouseExited="#req1ex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/3.1.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b321" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#sea1ok" onMouseExited="#sea1ex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/3.2.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b411" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#exok" onMouseExited="#exex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/4.1.1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="b421" fitHeight="700.0" fitWidth="700.0" onMouseClicked="#eveok" onMouseExited="#eveex" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/main1/4.2.1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#change" onMouseEntered="#entering" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

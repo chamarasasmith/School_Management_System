@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school_management_system.LoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="514.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <AnchorPane id="AnchorPane" maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" stylesheets="@CSTheme1.css">
+                     <children>
+                        <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/login.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="un" alignment="CENTER" layoutX="173.0" layoutY="308.0" promptText="NIC" styleClass="custom-text-field" />
+                        <Button layoutX="382.0" layoutY="337.0" mnemonicParsing="false" onAction="#login" styleClass="cus-button" text="Login" />
+                        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="389.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/zlogo.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="text1" layoutX="103.0" layoutY="406.0" prefHeight="43.0" prefWidth="395.0" styleClass="customlabel4" text="WP/GM/ Pitiyegedara Primary School Management System" wrapText="true" />
+                        <PasswordField fx:id="pw" alignment="CENTER" layoutX="173.0" layoutY="361.0" promptText="Password" styleClass="custom-password-field" />
+                        <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" layoutX="498.0" layoutY="188.0" onMouseClicked="#change" onMouseEntered="#entering" onMouseExited="#exit" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
